@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="../../../static/css/main.css">
 </head>
 <body>
+    <div class='navbar'>
+        <a href="{% url 'home' %}" class="logo"><h1>Self Driving Car Club</h1></a>
+        <ul class="nav">
+            <li class="nav_links"><a href="{% url 'projects' %}" class='links'>Projects</a></li>
+            <li class="nav_links"><a href="{% url 'join' %}" class='links'>Join</a></li>
+            <li class="nav_links"><a href="{% url 'contact' %}" class='links'>Contact</a></li>
+        </ul>
+    </div>
     {% block content %}
 
 

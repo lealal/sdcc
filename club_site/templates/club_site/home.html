@@ -1,7 +1,29 @@
-{% extends 'club_site/main.html' %}
+<!DOCTYPE html>
 {% load static %}
-
-{% block content %}
-    <h1>SDCC HOME</h1>
-    <img src="{% static 'images/image_test.jpg' %}" alt="image_test">
-{% endblock content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDCC - UMN</title>
+    <link rel="stylesheet" href="../../../static/css/main.css">
+</head>
+<body>
+    <div class='banner'>
+        <div class='navbar_home'>
+            <a href="{% url 'home' %}" class="logo_home"><h1>Self Driving Car Club</h1></a>
+            <ul class="nav">
+                <li class="nav_links"><a href="{% url 'projects' %}" class='links_home'>Projects</a></li>
+                <li class="nav_links"><a href="{% url 'join' %}" class='links_home'>Join</a></li>
+                <li class="nav_links"><a href="{% url 'contact' %}" class='links_home'>Contact</a></li>
+            </ul>
+        </div>
+        <div class='header-container'>
+            <h2>Learn how to apply </h2>
+            <h2>Artificial Intelligence</h2>
+            <h2>techniques and tune</h2>
+            <h2>Machine Learning models</h2>
+            <h2>while working on exciting projects</h2>
+        </div>
+    </div>
+</body>
+</html>
